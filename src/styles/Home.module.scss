@@ -1,0 +1,12 @@
+@import 'mixin';
+.main{
+	&__content{
+		max-width: 120rem;
+		margin: 0 auto;
+
+		@include responsive('tablet'){
+			max-width: 100%;
+			padding: 0 2rem;
+		}
+	}
+}

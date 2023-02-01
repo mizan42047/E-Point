@@ -1,0 +1,25 @@
+/* 
+	---Device Names---
+	1.desktop
+	2.tablet
+	3.mobile
+*/
+@mixin responsive($device){
+	@if $device == 'desktop'{
+		@media (min-width: 64em) {
+			@content;
+		}
+	}
+
+	@if $device == 'tablet' {
+		@media (max-width: 64em) {
+			@content;
+		}
+	}
+
+	@if $device == 'mobile' {
+		@media (max-width: 37.5em) {
+			@content;
+		}
+	}
+}

@@ -1,0 +1,23 @@
+.category__list{
+	padding: 6rem 0;
+
+	.list__grid{
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		gap: 2.5rem;
+
+		&--item{
+			img{
+				height: 150px;
+				object-fit: contain;
+			}
+
+			.category__title{
+				font-size: 1.6rem;
+				font-weight: 600;
+				color: #171717;
+				text-align: center;
+			}
+		}
+	}
+}
