@@ -43,22 +43,22 @@ const Header = () => {
 					</div>
 					<ul className={styles.header__menu}>
 						<li className={styles.menu__item}>
-							<Link className={pathname === '/' ? 'active' : undefined} href='/'>Shop</Link>
+							<Link className={pathname === '/' ? styles.active : undefined} href='/'>Shop</Link>
 						</li>
 						<li className={styles.menu__item}>
-							<Link className={pathname === '/cart' ? 'active' : undefined} href='/cart'>Cart</Link>
+							<Link className={pathname === '/cart' ? styles.active : undefined} href='/cart'>Cart</Link>
 						</li>
 						<li className={styles.menu__item}>
-							<Link className={pathname === '/checkout' ? 'active' : undefined} href='/checkout'>Checkout</Link>
+							<Link className={pathname === '/checkout' ? styles.active : undefined} href='/checkout'>Checkout</Link>
 						</li>
 						<li className={styles.menu__item}>
-							<Link className={pathname === '/blog' ? 'active' : undefined} href='/my-account'>Blog</Link>
+							<Link className={pathname === '/blog' ? styles.active : undefined} href='/my-account'>Blog</Link>
 						</li>
 						<li className={styles.menu__item}>
-							<Link className={pathname === '/news' ? 'active' : undefined} href='/my-account'>News</Link>
+							<Link className={pathname === '/news' ? styles.active : undefined} href='/my-account'>News</Link>
 						</li>
 						<li className={styles.menu__item}>
-							<Link className={pathname === '/my-account' ? 'active' : undefined} href='/my-account'>My Account</Link>
+							<Link className={pathname === '/my-account' ? styles.active : undefined} href='/my-account'>My Account</Link>
 						</li>
 					</ul>
 					<Space size={20}>
@@ -108,22 +108,22 @@ const Header = () => {
 			<EpDrawer isDrawerOpen={isDrawerOpen} setIsDrawerOpen={setIsDrawerOpen}>
 				<ul className={styles['responsive-mobile-menu']}>
 					<li className={styles.menu__item}>
-						<Link className={pathname === '/' ? 'active' : undefined} href='/'>Shop</Link>
+						<Link className={pathname === '/' ? styles.active : undefined} href='/'>Shop</Link>
 					</li>
 					<li className={styles.menu__item}>
-						<Link className={pathname === '/cart' ? 'active' : undefined} href='/cart'>Cart</Link>
+						<Link className={pathname === '/cart' ? styles.active : undefined} href='/cart'>Cart</Link>
 					</li>
 					<li className={styles.menu__item}>
-						<Link className={pathname === '/checkout' ? 'active' : undefined} href='/checkout'>Checkout</Link>
+						<Link className={pathname === '/checkout' ? styles.active : undefined} href='/checkout'>Checkout</Link>
 					</li>
 					<li className={styles.menu__item}>
-						<Link className={pathname === '/blog' ? 'active' : undefined} href='/my-account'>Blog</Link>
+						<Link className={pathname === '/blog' ? styles.active : undefined} href='/my-account'>Blog</Link>
 					</li>
 					<li className={styles.menu__item}>
-						<Link className={pathname === '/news' ? 'active' : undefined} href='/my-account'>News</Link>
+						<Link className={pathname === '/news' ? styles.active : undefined} href='/my-account'>News</Link>
 					</li>
 					<li className={styles.menu__item}>
-						<Link className={pathname === '/my-account' ? 'active' : undefined} href='/my-account'>My Account</Link>
+						<Link className={pathname === '/my-account' ? styles.active : undefined} href='/my-account'>My Account</Link>
 					</li>
 				</ul>
 				<Space wrap style={{ padding: '8px 0' }}>

@@ -1,23 +1,49 @@
-.category__list{
+@import "_mixin";
+
+.category__list {
 	padding: 6rem 0;
 
-	.list__grid{
+	.list__grid {
 		display: grid;
-		grid-template-columns: repeat(5, 1fr);
+		grid-template-columns: repeat(4, 1fr);
 		gap: 2.5rem;
 
-		&--item{
-			img{
-				height: 150px;
-				object-fit: contain;
+		@include responsive(tablet) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		@include responsive(mobile) {
+			grid-template-columns: repeat(2, 1fr);
+			gap: 1rem;
+		}
+
+		&--item {
+			background-color: #fbf6f0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 4rem;
+			border-radius: 1rem;
+			transition: all 0.3s ease-in-out;
+
+			&:hover {
+				color: #cfa97c;
 			}
 
-			.category__title{
-				font-size: 1.6rem;
-				font-weight: 600;
-				color: #171717;
-				text-align: center;
-			}
+		}
+
+		.category__link {
+			text-decoration: none;
+			color: inherit;
+			display: block;
+			text-transform: uppercase;
+		}
+
+		.category__title {
+			vertical-align: middle;
+			margin: 0;
+			font-size: 1.6rem;
+			font-weight: 700;
 		}
 	}
 }

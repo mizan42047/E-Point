@@ -1,0 +1,10 @@
+node_modules
+package-lock.json
+.vscode/settings.json
+.next/trace
+.next/cache
+.next/server
+.next/static
+.next/dist
+.next/build-manifest.json
+.next/react-loadable-manifest.json

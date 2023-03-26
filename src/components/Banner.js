@@ -2,7 +2,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Autoplay, Parallax, Pagination, Navigation } from "swiper";
 import Image from 'next/image';
-import { Space } from 'antd';
+import { Button } from 'antd';
+import { ShoppingCartOutlined } from '@ant-design/icons';
 
 const Banner = () => {
 	return (
@@ -16,34 +17,48 @@ const Banner = () => {
 					pagination={{
 						clickable: true,
 					}}
+					autoplay={{
+						delay: 1000,
+						disableOnInteraction: false
+					}}
 					modules={[Autoplay, Parallax, Pagination]}
 					className="e-point-swiper"
 				>
 					<SwiperSlide>
-						<Space size={0} style={{width: "100%"}}>
-							<Image src='/lady-1.png' alt='lady' width={1200} height={1200}/>
-							<Image src='/lady-2.png' alt='lady' width={1200} height={1200}/>
-						</Space>
-						<h1>Slider 1</h1>
+						<Image src="/slider1.jpg" alt='Women Fashion' width={2048} height={1024} />
+						<div className="slider__overlay"></div>
+						<div className="slider__content">
+							<Image src='/black.svg' alt='Black Friday' width={600} height={600} className="offer-name" />
+							<Image src='/sale.svg' alt='50% Sale' width={400} height={400} className="offer-amount" />
+							<Button className='purchase-btn' style={{ background: '#FBF6F0' }} size='large' type="primary" shape="square" icon={<ShoppingCartOutlined />} title="Purchase Now">Purchase Now</Button>
+						</div>
 					</SwiperSlide>
 					<SwiperSlide>
-						<Space size={0}>
-							<Image src='/lady-3.png' alt='lady' width={1200} height={1200}/>
-							<Image src='/lady-4.png' alt='lady' width={1200} height={1200}/>
-						</Space>
-						<h1>Slider 2</h1>
+						<Image src="/slider2.jpg" alt='Women Fashion' width={2048} height={1024} />
+						<div className="slider__overlay right"></div>
+						<div className="slider__content right">
+							<Image src='/black.svg' alt='Black Friday' width={600} height={600} className="offer-name" />
+							<Image src='/sale.svg' alt='50% Sale' width={400} height={400} className="offer-amount" />
+							<Button className='purchase-btn' style={{ background: '#FBF6F0' }} size='large' type="primary" shape="square" icon={<ShoppingCartOutlined />} title="Purchase Now">Purchase Now</Button>
+						</div>
 					</SwiperSlide>
 					<SwiperSlide>
-						<Space size={0}>
-							<Image src='/men-1.png' alt='lady' width={1200} height={1200}/>
-							<Image src='/men-2.png' alt='lady' width={1200} height={1200}/>
-						</Space>
+						<Image src="/slider3.jpg" alt='Women Fashion' width={2048} height={1024} />
+						<div className="slider__overlay"></div>
+						<div className="slider__content">
+							<Image src='/black.svg' alt='Black Friday' width={600} height={600} className="offer-name" />
+							<Image src='/sale.svg' alt='50% Sale' width={400} height={400} className="offer-amount" />
+							<Button className='purchase-btn' style={{ background: '#FBF6F0' }} size='large' type="primary" shape="square" icon={<ShoppingCartOutlined />} title="Purchase Now">Purchase Now</Button>
+						</div>
 					</SwiperSlide>
 					<SwiperSlide>
-						<Space size={0}>
-							<Image src='/men-3.png' alt='lady' width={1200} height={1200}/>
-							<Image src='/men-4.png' alt='lady' width={1200} height={1200}/>
-						</Space>
+						<Image src="/slider4.jpg" alt='Women Fashion' width={2048} height={1024} />
+						<div className="slider__overlay right"></div>
+						<div className="slider__content right">
+							<Image src='/black.svg' alt='Black Friday' width={600} height={600} className="offer-name" />
+							<Image src='/sale.svg' alt='50% Sale' width={400} height={400} className="offer-amount" />
+							<Button className='purchase-btn' style={{ background: '#FBF6F0' }} size='large' type="primary" shape="square" icon={<ShoppingCartOutlined />} title="Purchase Now">Purchase Now</Button>
+						</div>
 					</SwiperSlide>
 				</Swiper>
 			</div>
